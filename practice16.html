@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert JPG to PDF. Images JPG to PDF online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="shortcut icon" href="/images/image-removebg-preview.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        :root {
+            --fs-primary: 15px;
+            --fw-bold: bold;
+            --ff-base: Arial, Helvetica, sans-serif;
+            --clr-text: #32323b;
+        }
+
+
+        body {
+            width: 100%;
+            overflow-x: hidden;
+            height: auto;
+
+        }
+
+        .nav-sec {
+            height: 10vh;
+            width: 100%;
+            border: 1px solid rgb(199, 195, 195);
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+
+
+
+
+        }
+
+
+        .main {
+            height: 90vh;
+            width: 100%;
+            background-image: url("images/matthew-stephenson-1R9cIktvpfE-unsplash.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: #f5f5fa;
+
+
+        }
+
+        .navbar_parent1 {
+            height: 100%;
+            width: 70%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .navbar_parent2 {
+            height: 100%;
+            width: 30%;
+
+
+
+        }
+
+        .login_prent {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            /* THIS is the key */
+            gap: 8px;
+
+            /* margin-left: 5px; */
+        }
+
+
+        .child1 {
+            font-size: 15px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #32323b;
+        }
+
+        .login {
+            font-size: 15px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #32323b;
+            padding: 10px;
+        }
+
+        .singup {
+
+            background-color: #e6342e;
+            color: white;
+            margin-top: 8px;
+            height: 35px;
+            width: 80px;
+            border-radius: 10px;
+            padding: 8px;
+            border: none;
+
+
+            /* font-weight:500; */
+
+        }
+
+        .singup:hover {
+            background-color: #cb2b25;
+            cursor: pointer;
+        }
+
+        .child1:hover {
+            color: #e6342e;
+
+            cursor: pointer;
+        }
+
+        .login:hover {
+            color: #e6342e;
+
+            cursor: pointer;
+        }
+
+        .heading {
+            color:
+                #32323b;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 43px;
+            margin-top: 40px;
+        }
+
+        .section1 {
+            text-align: center;
+
+            padding-top: 25px;
+            padding-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            color: #32323b;
+
+        }
+
+        .section2 {
+            text-align: center;
+
+            padding: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: #32323b;
+            font-weight: 500;
+
+        }
+
+        .section4 {
+            text-align: center;
+
+            padding: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: #32323b;
+            font-weight: 500;
+
+        }
+
+        .section2 h3 {
+            font-size: 20px;
+            font-weight: 300;
+            margin-top: 0px;
+        }
+
+        .button_jpg {
+            height: 80px;
+            width: 320px;
+            background-color: #e5322d;
+            color: white;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 560;
+            cursor: pointer;
+
+        }
+
+        .button_jpg:hover {
+            transition: all 0.2s linear;
+            background-color: #a11e19;
+            color: white;
+        }
+
+        .icon_child1 {
+            height: 36px;
+            width: 36px;
+            background-color: #e5322d;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        .icon_child1:hover {
+            background-color: #b21c17;
+            transition: all 0.2s linear;
+        }
+
+        .icon_child2:hover {
+            background-color: #b21c17;
+            transition: all 0.2s linear;
+        }
+
+        .icon_child2 {
+            height: 36px;
+            width: 36px;
+            background-color: #e5322d;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .fa-brands {
+            color: white;
+
+        }
+
+        .button_parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+
+        }
+
+        .section4 {
+            margin-top: 10px;
+        }
+
+        .child11 img {
+            max-width: 120px;
+            /* mobile ke hisab se perfect */
+            width: 100%;
+            height: auto;
+        }
+        img {
+    max-width: 100%;
+    height: auto;
+}
+
+        @media (max-width: 1082px) {
+            .child1 {
+                visibility: hidden;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="nav-sec">
+        <div class="navbar_parent1">
+            <div class="child11"><img src="/images/image copy 7.png" alt=""></div>
+            <div class="child1">MERGE PDF</div>
+            <div class="child1">SPLIT PDF</div>
+            <div class="child1">COMPRESS PDF</div>
+            <div class="child1">CONVERT PDF</div>
+            <div class="child1">ALL PDF TOOLS</div>
+        </div>
+        <div class="navbar_parent2">
+            <div class="login_prent">
+                <div class="login">Login</div>
+                <button class="singup">Sing up</button>
+                <div class="6dot"><img src="/images/image copy 6.png" alt=""></div>
+            </div>
+
+        </div>
+    </section>
+    <div class="main">
+        <section class="section1">
+            <h1>JPG to PDF
+            </h1>
+        </section>
+        <section class="section2">
+            <h3>Convert JPG images to PDF in seconds. Easily adjust orientation and margins.
+            </h3>
+        </section>
+        <section class="section3">
+            <div class="button_parent">
+                <div class="button_jpg">Select JPG images</div>
+
+                <div class="icon">
+                    <div class="icon_child1"><i class="fa-brands fa-google-drive"></i></div>
+                    <div class="icon_child2"> <i class="fa-brands fa-dropbox"></i></div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section4"">
+            <p>or drop JPG images here
+            </p>
+        </section>
+        <p style=" font-family: Arial, Helvetica, sans-serif;margin-top:47vh;margin-left:17px; display:
+            flex;align-self: flex-end; color:gray ">© iLovePDF 2025 ® - Your PDF Editor</p>
+
+    </div>
+</body>
+
+</html>
+
+
+-----------------
+ class="section2">
+            <h3>Convert JPG images to PDF in seconds. Easily adjust orientation and margins.
+            </h3>
+        </section>
+        <section class="section3">
+            <div class="button_parent">
+                <div class="button_jpg">Select JPG images</div>
+
+                <div class="icon">
+                    <div class="icon_child1"><i class="fa-brands fa-google-drive"></i></div>
+                    <div class="icon_child2"> <i class="fa-brands fa-dropbox"></i></div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section4"">
+            <p>or drop JPG images here
+            </p>
+        </section>
+        <p style=" font-family: Arial, Helvetica, sans-serif;margin-top:47vh;margin-left:17px; display:
+            flex;align-self: flex-end; color:gray ">© iLovePDF 2025 ® - Your PDF Editor</p>
+
+    </div>
+</body>
+

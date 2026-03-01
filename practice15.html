@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        body {
+            height: 100vh;
+            background-color: #ffffff;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+
+
+
+        }
+
+        .main_parent_section {
+            height: 85vh;
+            width: 44vw;
+            background-color: #fffbe6;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 8px;
+        }
+        .main_parent_section:hover{
+            transition: all 2s linear ;
+            background-color: #7b0b49;
+            color: white;
+        }
+        .downloadcertificate h2:hover{
+             transition: all 2s linear ;
+           
+            color: white;
+        }
+
+        .main_parent {
+            margin: none;
+
+
+            /* padding: 10px; */
+        }
+
+        .downloadcertificate {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .downloadcertificate h2 {
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 551;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            color: rgba(0, 0, 0, 0.833);
+        }
+
+        input {
+            display: block;
+            width: 95%;
+            height: 34px;
+            border-radius: 7px;
+            box-shadow: 0px 0px 5px ;
+            outline: none;
+            
+            margin-top: 5px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            padding-left: 10px;
+        }
+
+        input:focus {
+            outline: none;
+           border:3px solid rgb(96, 161, 191);
+           box-shadow: 0px 0px 2px rgb(150, 200, 223);
+        }
+        input::placeholder {
+  /* font-weight: bold; */
+  opacity: 0.8;
+  font-size: 15px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  /* font-weight: bold; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+        label {
+            display: block;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 10px;
+
+
+        }
+
+        .pp {
+            color: red;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 20px;
+
+        }
+
+        .dbtn button {
+            width: 95%;
+            height: 34px;
+            background-color: #0d6efd;
+            border-radius: 7px;
+            outline: none;
+            border: 1px solid gray;
+            color: white;
+            height: 37px;
+            margin-left: 10px;
+            cursor: pointer;
+
+        }
+        .dbtn button:hover{
+             background-color: #0f65c2;
+             transition: all 0.5s linear;
+        }
+        
+
+        .captcha_img {
+            width: 150px;
+            height: 37px;
+        }
+
+        .captcha_input {
+            width: 150px;
+            height: 37px;
+        }
+
+        .img_input .btn_input {
+            display: block;
+            border-radius: 7px;
+            width: 150px;
+            height: 37px;
+            
+
+
+        }
+
+        .img_input {
+            display: block;
+            width: 150px;
+            height: 37px;
+            margin-top: 5px;
+        }
+
+        .btn_input {
+            display: block;
+            width: 90px;
+            height: 37px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 7px;
+            color: white;
+            font-weight: bold;
+            margin-top: 5px;
+            cursor: pointer;
+
+        }
+        .btn_input:hover{
+           
+             background-color: #0f65c2;
+             
+             transition: all 0.5s linear;
+        }
+
+        .captcha_parent {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="main_parent_section">
+        <div class="main_parent">
+            <secction class="downloadcertificate">
+                <h2>Download Certificate
+                </h2>
+            </secction>
+            <secction><label for="Select_Services">Select Services *</label>
+                <input type="text" placeholder="RTPS">
+            </secction>
+            <secction><label for="Select_Services">Application Ref. Number *</label>
+                <input type="text" placeholder="eg:BICCO/2021/00000">
+            </secction>
+            <secction><label for="Select_Services">Applicant Name (In English) *</label>
+                <input type="text" placeholder="eg: Abc Kumar">
+            </secction>
+            <label for="Select_Services">Captcha *
+            </label>
+            <secction class="captcha_parent">
+
+                <input class="captcha_input" type="text" placeholder="Enter Captcha">
+                <img class="img_input" src="/images/image copy 5.png" alt="" class="captcha_img">
+                <button class="btn_input">Refresh</button>
+            </secction>
+
+            <section class="dbtn"><button>Download</button></section>
+            <section>
+                <p class="pp">नोट :- कृपया अपने आवेदन के निष्पादन होने के 24 घंटे बाद ही अपना प्रमाणपत्र डाउनलोड करें।
+                </p>
+            </section>
+        </div>
+    </section>
+</body>
+
+</html>

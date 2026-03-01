@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      
+      body {
+        height: 100vh;
+        width: 100%;
+        background-color:rgb(187, 182, 182);
+        background-image: url(/images/ed-leszczynskl-R3ofE-8DyLk-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        opacity: 0.8;
+
+        
+      }
+      .parent{
+       
+  width: 80%;
+  max-width: 470px;
+
+        /* border: 2px solid black; */
+        border-radius: 15px;
+        display: flex;
+        box-shadow: rgba(216, 216, 222, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        justify-content: center;
+        align-items: center;
+        background-color:#51702e;
+      }
+      section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* .calculator {
+        height: 95%;
+        width: 95%;
+      } */
+      .output {
+        background: rgb(0, 2, 0);
+        height: 15vh;
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+align-items: center;
+font-size: 50px;
+color: rgb(255, 255, 255);
+text-align: center;
+      }
+      .btn_small {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        height: 80px;
+        width: 100px;
+        border: 2px solid rgb(44, 11, 11);
+        border-radius: 10px;
+        background-color: #dfefdf;
+        display: flex;
+        justify-content: center;
+align-items: center;
+font-size: 50px;
+color: rgb(0, 0, 0);
+text-align: center;
+      }
+     
+      .all_btn {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .all_btn_big{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+         gap: 10px; 
+         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      }
+      .big_btn_1{
+        margin-left: 20px;
+
+         height: 80px;
+        width: 210px;
+        border: 2px solid rgb(44, 11, 11);
+        border-radius: 10px;
+        background-color: #dfefdf;
+         display: flex;
+        justify-content: center;
+align-items: center;
+font-size: 50px;
+color: rgb(0, 0, 0);
+text-align: center;
+      }
+      .six{
+         background-color: #272d28;
+         color: white;
+         border: 1px solid rgb(7, 7, 7);
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      }
+      .big_btn_2{
+        margin-left: 4px;
+        border: 2px solid black;
+ display: flex;
+        justify-content: center;
+align-items: center;
+font-size: 50px;
+color: rgb(0, 0, 0);
+text-align: center;
+color: rgb(7, 7, 7);
+         height: 80px;
+        width: 100px;
+        /* border: 2px solid rgb(44, 11, 11); */
+        border-radius: 10px;
+        background-color: #dfefdf;
+       
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="parent">
+        <div class="calculator">
+          <div class="output">0</div>
+          <div class="all_btn">
+            <div class="btn_small">C</div>
+            <div class="btn_small">%</div>
+            <div class="btn_small">/</div>
+
+            <div class="btn_small">*</div>
+            <div class="btn_small">7</div>
+            <div class="btn_small">8</div>
+            <div class="btn_small">9</div>
+
+            <div class="btn_small">-</div>
+            <div class="btn_small">4</div>
+            <div class="btn_small">5</div>
+            <div class="btn_small">6</div>
+
+            <div class="btn_small ">+</div>
+            <div class="btn_small">1</div>
+            <div class="btn_small">2</div>
+            <div class="btn_small">3</div>
+
+            <div class="btn_small six">=</div>
+          </div>
+
+          <div class="all_btn_big">
+            <div class="big_btn_1">0</div>
+            <div class="big_btn_2">.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

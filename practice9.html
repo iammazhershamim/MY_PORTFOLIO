@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICE 9</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            /* background-color: #f9f9f9; */
+        }
+        .header{
+            height: 100px;
+            background-color: #fffffc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .header_h1{
+            color: #333333;
+            font-size: 40px;
+
+        }
+        .card{
+            height:538px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+           margin-top: 0px;
+           margin-left: 200px;
+           margin-right: 200px;
+           margin-bottom: 200px;
+           background-color:#fffffc;
+           
+           
+            /* border:2px solid #333333; */
+        }
+        .card_child{
+              /* border:2px solid #333333; */
+              border: 2px solid #dddddd;
+              border-radius: 10px;
+
+            
+        }
+        .card_child1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+           
+        }
+        .card_child1:hover{
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .card_child2:hover{
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .card_child3:hover{
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .card_child4:hover{
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .div1_image{
+            height: 110px;
+            width: 110px;
+             margin: 10px;
+             
+            margin-top: 0px;
+            /* padding-top: 0px; */
+        }
+        .div1_heading{
+            text-align: center;
+            color: #333;
+        }
+        .div1_para{
+            text-align: center;
+           color: #555;
+            
+        }
+        
+        .div1_button{
+            height: 40px;
+            width: 100px;
+            background-color: #0580f2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            
+        }
+        .div1_button:hover{
+            background-color: #0366c2;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+         .div2_button:hover{
+            background-color: #0366c2;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+         .div3_button:hover{
+            background-color: #0366c2;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+         .div4_button:hover{
+            background-color: #0366c2;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+        .card_child2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+           
+        }
+        .div2_image{
+            height: 110px;
+            width: 110px;
+             margin: 10px;
+             
+            margin-top: 0px;
+            /* padding-top: 0px; */
+        }
+        .div2_heading{
+            text-align: center;
+            color: #333;
+        }
+        .div2_para{
+            text-align: center;
+           color: #555;
+            
+        }
+        .div2_button{
+            height: 40px;
+            width: 100px;
+            background-color: #0580f2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }.card_child3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+           
+        }
+        .div3_image{
+            height: 110px;
+            width: 110px;
+             margin: 10px;
+             
+            margin-top: 0px;
+            /* padding-top: 0px; */
+        }
+        .div3_heading{
+            text-align: center;
+            color: #333;
+        }
+        .div3_para{
+            text-align: center;
+           color: #555;
+            
+        }
+        .div3_button{
+            height: 40px;
+            width: 100px;
+            background-color: #0580f2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }.card_child4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+           
+        }
+        .div4_image{
+            height: 110px;
+            width: 110px;
+             margin: 10px;
+             
+            margin-top: 0px;
+            /* padding-top: 0px; */
+        }
+        .div4_heading{
+            text-align: center;
+            color: #333;
+        }
+        .div4_para{
+            text-align: center;
+           color: #555;
+            
+        }
+        .div4_button{
+            height: 40px;
+            width: 100px;
+            background-color: #0580f2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <h1 class="header_h1">Our Services</h1>
+    </div>
+    <div class="card">
+        <div class="card_child card_child1">
+            <img src="images/1.JPG" alt="logo1" class="div1_image">
+            <h2 class="div1_heading">Web Design</h2>
+            <p class="div1_para">We create beautiful and modern website designs that match your brand style and goals.</p>
+            
+            <input type="button" value="Read More" class="div1_button">
+        </div>
+        <div class="card_child card_child2"><img src="images/1.JPG" alt="logo1" class="div1_image">
+            <h2 class="div1_heading">Web Design</h2>
+            <p class="div1_para">We create beautiful and modern website designs that match your brand style and goals.</p>
+            
+            <input type="button" value="Read More" class="div1_button"></div>
+        <div class="card_child card_child3"><img src="images/1.JPG" alt="logo1" class="div1_image">
+            <h2 class="div1_heading">Web Design</h2>
+            <p class="div1_para">We create beautiful and modern website designs that match your brand style and goals.</p>
+            
+            <input type="button" value="Read More" class="div1_button"></div>
+        <div class="card_child card_child4"><img src="images/1.JPG" alt="logo1" class="div1_image">
+            <h2 class="div1_heading">Web Design</h2>
+            <p class="div1_para">We create beautiful and modern website designs that match your brand style and goals.</p>
+            
+            <input type="button" value="Read More" class="div1_button"></div>
+    </div>
+    
+</body>
+</html>

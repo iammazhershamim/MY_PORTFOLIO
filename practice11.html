@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSBC Bihar – Application Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha384-…" crossorigin="anonymous">
+
+  <style>
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+    }
+
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      position: relative;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* ===============================================
+       THIS IS NAVBAR
+    =============================================== */
+    .nav_parent {
+      min-height: 25vh;
+      background-color: #633939;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      overflow: hidden;
+      padding-right: 10px;
+    }
+
+    .nav_child_heading {
+      background-color: #633939;
+      height: 100%;
+      width: 65%;
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+    }
+
+    .child_logo {
+      height: 100%;
+      width: 15%;
+      margin-top: 20px;
+      /* margin-left: 10px; */
+    }
+
+    .child_logo img {
+      width: 100%;
+      height: auto;
+      max-height: 90px;
+    }
+
+    .child_csbc {
+      width: 85%;
+      position: absolute;
+      top: 15px;
+      left: 120px;
+      font-size: 13.5px;
+      color: white;
+    }
+
+    .child_csbc h2 {
+      margin: 10px;
+    }
+
+    .child_csbc p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .nav_child_support {
+      background-color: #633939;
+      height: 100%;
+      width: 35%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+
+    .support_number p {
+      color: white;
+      margin: 3px;
+      font-size: 14px;
+    }
+
+    .support_number p:first-child {
+      color: rgba(44, 171, 44, 0.907);
+    }
+
+    .support_home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0px;
+      margin-left: 40px;
+    }
+
+    .fa-house {
+      font-size: 25px;
+      margin-top: 15px;
+      color: white;
+      margin-right: 8px;
+    }
+
+    .support_home p {
+      font-size: 22px;
+      margin-top: 15px;
+      color: white;
+    }
+
+    /* ===============================================
+       THIS IS MOVING TEXT (MARQUEE STYLE)
+    =============================================== */
+    .pp {
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 14px;
+      color: blue;
+      white-space: nowrap;
+      overflow: hidden;
+      display: block;
+      position: relative;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .pp span {
+      display: inline-block;
+      position: absolute;
+      right: -100%;
+      animation: texty 15s linear infinite;
+    }
+
+    @keyframes texty {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-200%);
+      }
+    }
+
+    /* ===============================================
+       THIS IS MAIN SECTION
+    =============================================== */
+    .main_section {
+      height: 65vh;
+      margin-top: 20px;
+      margin-left: 160px;
+      margin-right: 160px;
+      border:0.5px solid rgba(0, 0, 0, 0.805);
+      border-radius: 5px;
+    }
+
+    .heading_form {
+      display: flex;
+      justify-content: space-between;
+      background-color: #094f5f;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .heading_form h2 {
+      display: flex;
+      align-self: center;
+      margin-left: 200px;
+    }
+
+    .heading_form h2,
+    h4 {
+      color: white;
+    }
+
+    .heading_form h4 {
+      margin-top: 10px;
+    }
+
+    .id_no_container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+      align-items: center;
+      margin-left: 40px;
+      gap: 0px;
+    }
+
+    .id_no_container input {
+      margin-top: 5px;
+      height: 30px;
+      width: 450px;
+    }
+
+    .or {
+      padding: 20px;
+      margin: 10px;
+      margin-top: 30px;
+      display: flex;
+    }
+
+    .and {
+      text-align: center;
+      font-size: 15px;
+      text-decoration: none;
+      margin-left: 15px;
+      margin-top: 0px;
+      padding: 0px;
+    }
+
+    .dob_parent {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    .dob_parent h3 {
+      margin-bottom: 10px;
+      align-self: self-start;
+      margin-left: 300px;
+    }
+
+    .dob_child select {
+      height: 30px;
+      width: 150px;
+      border-radius: 5px;
+    }
+
+    .dob_child .input_dob1 {
+      height: 32px;
+      width: 280px;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    .dob_child .input_dob2 {
+      height: 35px;
+      width: 150px;
+      /* border-radius: 5px; */
+      
+    }
+    .button_parent{
+      display: flex;
+      justify-content: center;
+      justify-content: space-around;
+      margin-top: 20px;
+      
+      
+    }
+    .buttons{
+      height: 30px;
+      width: 250px;
+      color: aliceblue;
+      display: flex;
+     justify-content: center;
+     align-items: center;
+
+      
+      
+      
+      /* border: 2px solid black; */
+      border-radius: 5px;
+    }
+    .button1{
+      background-color: #394345;
+    }
+    .button2{
+      background-color: #2ca8b1;
+    }
+    .footer_section{
+      height: 8vh;
+      background-color: #094f5f;
+      margin-top: 5px;
+      display: flex;
+      justify-content: center;
+
+    }
+    .footer_parent{
+color: aliceblue;
+    }
+    /* .footer_parent span{
+      display: inline-block;
+    } */
+     .footer_parent h4,p,span{
+      text-align: center;
+      margin-top: 1px;
+     }
+     span a{
+      color: rgb(22, 227, 22);
+     }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===============================================
+       THIS IS NAVBAR
+  =============================================== -->
+  <div class="nav_parent">
+    <div class="nav_child_heading">
+      <div class="child_logo">
+        <img src="/images/image copy 4.png" alt="CSBC Logo">
+      </div>
+      <div class="child_csbc">
+        <h2>CENTRAL SELECTION BOARD OF CONSTABLE, BIHAR, PATNA</h2>
+        <p>05, Harding Road, Patna-800001, Bihar</p>
+        <p>RECRUITMENT FOR PROHIBITION CONSTABLE, WARDER & MOBILE SQUAD <br>CONSTABLES <br>(Advt. No. 03/2025)</p>
+      </div>
+    </div>
+
+    <div class="nav_child_support">
+      <div class="support_number">
+        <p>Customer Support: (9AM - 6PM)</p>
+        <p>9279895397 |</p>
+        <p>8862824669 | csbchelpdesk@gmail.com</p>
+      </div>
+      <div class="support_home">
+        <i class="fa-solid fa-house"></i>
+        <p><a href="index.html">Home</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===============================================
+       THIS IS MAIN SECTION
+  =============================================== -->
+  <section class="main_section">
+    <div class="maincontainer">
+      <div class="heading_form">
+        <h2>Fill Application Form / View Application Status</h2>
+        <h4>(For Registered applicants only)</h4>
+      </div>
+
+      <!-- ===============================================
+           THIS IS MOVING TEXT (NOW INSIDE MAIN)
+      =============================================== -->
+      <p class="pp">
+        <span>Please enter Registration ID or Mobile number and Date of birth which you have entered while filling
+          registration form</span>
+      </p>
+
+      <div class="id_no_container">
+        <div class="id">
+          <h3>REGISTRATION ID</h3>
+          <input class="input_1" type="text" placeholder="ENTER REGISTRATION ID">
+        </div>
+        <div class="or">OR</div>
+        <div class="no">
+          <h3>MOBILE NUMBER</h3>
+          <input class="input_2" type="text" placeholder="ENTER MOBILE NUMBER">
+        </div>
+      </div>
+      <div class="and">AND</div>
+
+      <div class="dob_captcha_parent">
+        <div class="dob_parent">
+          <h3>Date of Birth</h3>
+          <div class="dob_child">
+            <select name="day" id="day">
+              <option>DD</option>
+            </select>
+
+            <select name="month" id="month">
+              <option>Month</option>
+            </select>
+
+            <select name="year" id="year">
+              <option>Year</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="dob_parent">
+          <h3>ENTER CAPTCHA</h3>
+          <div class="dob_child">
+            <input class="input_dob1" type="text">
+            <input class="input_dob2" type="text">
+          </div>
+        </div>
+      </div>
+      <div class="button_parent">
+      <div class="button1 buttons"><SPAN>BACK</SPAN></div>
+         <div class="button2 buttons"><SPAN>SUBMIT</SPAN></div>
+    </div>
+    </div>
+    
+  </section>
+<section class="footer_section">
+  <div class="footer_parent">
+  <h4>Copyright © CENTRAL SELECTION BOARD OF CONSTABLE, BIHAR, PATNA. All Rights Reserved</h4>
+  <p>05, Harding Road, Patna-800001, Bihar</p>
+  <p>For more information please visit <span><a class="f-a" href="https://csbc.bihar.gov.in">https://csbc.bihar.gov.in</a></span></p>
+  
+  </div>
+</section>
+</body>
+
+</html>

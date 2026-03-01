@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            background-color: #ffffff;
+        }
+
+        .navbar_main_parent {
+            height: 6vh;
+            /* background-color: aquamarine; */
+            margin-top: 6px;
+            padding: 5px 10px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .child_nav {
+            margin-left: 20px;
+            color: black;
+            font-size: 15px;
+        }
+
+        .child_nav img {
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+        }
+
+        .google_image {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            margin-left: 5px;
+        }
+
+        .serch_box {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            height: 45px;
+            width: 50vw;
+            border: 2px solid rgb(84, 6, 6);
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .serch_box input {
+            height: 45px;
+            width: 50vw;
+            border: none;
+
+
+            /* border-radius: 20px; */
+            /* margin-top: 30px;  */
+        }
+
+        .input_baccha {
+            height: 45px;
+            width: 45px;
+            background-color: rgb(255, 28, 164);
+
+
+            /* margin-top: 50px; */
+
+        }
+
+        .serch_box img {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            height: fit-content;
+            height: 45px;
+            width: 45px;
+        }
+
+        .serch_box_main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .serch_box input:focus {
+            /* border: none; */
+            outline: none;
+        }
+
+        .section_gol {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gol {
+            margin-top: 40px;
+            height: 50px;
+            width: 50vw;
+            /* border: 2px solid black; */
+            display: flex;
+            gap: 10px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .gol_bachha {
+            /* border:5px solid rgb(104, 101, 101); */
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            display: flex;
+        }
+
+        .gol img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            display: flex;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="navbar_main_parent">
+            <a href="#" class="child_nav">Gmail</a>
+            <a href="#" class="child_nav">Images</a>
+            <a href="#" class="child_nav">
+                <img src="/images/tube (1).png" alt="Search Lab">
+            </a>
+            <a href="#" class="child_nav">
+                <img src="/images/dots-menu.png" alt="Apps">
+            </a>
+            <a href="#" class="child_nav">
+                <img src="/images/profilephoto.jpg" alt="Profile">
+            </a>
+        </section>
+        <section class="google_image"><img src="/images/image.png" alt="googeimage"></section>
+        <section class="serch_box_main">
+
+            <div class="serch_box">
+                <div class="first_input input_baccha"><img src="/images/image copy 3.png" alt=""></div>
+
+                <input type="search" placeholder="Serch Google or type a URL">
+                <div class="second_input input_baccha"><img src="/images/image copy.png" alt=""></div>
+                <div class="third_input input_baccha"><img src="/images/image copy 2.png" alt=""></div>
+            </div>
+
+        </section>
+        <section class="section_gol">
+            <div class="gol">
+                <div class="gol_bachha"><img src="/images/3.JPG" alt=""></div>
+                <div class="gol_bachha"><img src="/images/4.JPG" alt=""></div>
+                <div class="gol_bachha"><img src="/images/3.JPG" alt=""></div>
+                <div class="gol_bachha"><img src="/images/3.JPG" alt=""></div>
+                <div class="gol_bachha"><img src="/images/3.JPG" alt=""></div>
+                <div class="gol_bachha"><img src="/images/3.JPG" alt=""></div>
+                <div class="gol_bachha"><img src="/images/3.JPG" alt=""></div>
+                <div class="gol_bachha"><img src="/images/3.JPG" alt=""></div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

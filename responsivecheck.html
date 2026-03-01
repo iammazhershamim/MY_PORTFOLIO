@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>University Admission Portal - Login</title>
+
+  <style>
+    /* =========================
+       Base (mobile-first)
+       ========================= */
+    :root{
+      font-size: 16px;            /* 1rem = 16px (easy math) */
+      --blue: #0b74d1;            /* header blue */
+      --dark-blue: #0a5fb0;
+      --green: #2eae4a;           /* login button */
+      --teal: #1290a0;            /* create account */
+      --brown: #4b220d;           /* footer */
+      --card-bg: #fff;
+      --muted: #6b6b6b;
+      --radius: 8px;
+      --max-card-width: 420px;    /* card width on larger screens */
+    }
+
+    /* Reset & simple typography */
+    *{box-sizing: border-box;}
+    html,body{height:100%;}
+    body{
+      margin:0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      color:#222;
+      background: #fafafa;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.4;
+    }
+
+    /* =========================
+       Header (top blue bar)
+       ========================= */
+    .site-header{
+      background: linear-gradient(90deg,var(--blue),var(--dark-blue));
+      color: #fff;
+      padding: 0.6rem 1rem;       /* responsive vertical/horizontal */
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:0.6rem;
+      font-weight:700;
+      font-size:1.05rem;
+    }
+    .brand .logo{
+      width:28px;
+      height:28px;
+      border-radius:4px;
+      background: rgba(255,255,255,0.12);
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      font-size:0.9rem;
+    }
+    .nav{
+      display:flex;
+      gap:1rem;
+      align-items:center;
+      font-size:0.95rem;
+      opacity:0.95;
+    }
+
+    /* =========================
+       Layout & centering
+       ========================= */
+    .page{
+      min-height: calc(100vh - 120px); /* leave space for header+footer */
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding: 2.2rem 1rem;      /* mobile padding */
+    }
+
+    /* =========================
+       Login card
+       ========================= */
+    .login-card{
+      width: 100%;               /* fluid on small screens */
+      max-width: var(--max-card-width);
+      background: var(--card-bg);
+      border-radius: 6px;
+      box-shadow: 0 6px 22px rgba(20,35,50,0.08);
+      padding: 1.4rem;
+      border: 1px solid rgba(0,0,0,0.04);
+    }
+
+    .login-title{
+      display:flex;
+      align-items:center;
+      gap:0.6rem;
+      justify-content:center;
+      font-size:1.25rem;
+      margin-bottom:0.8rem;
+      font-weight:600;
+      color:#111;
+    }
+    .login-title .icon{
+      font-size:1.25rem;
+      opacity:0.7;
+    }
+
+    .form-group{
+      margin-bottom:0.9rem;
+    }
+    label{
+      display:block;
+      font-size:0.85rem;
+      color:var(--muted);
+      margin-bottom:0.35rem;
+    }
+
+    input[type="text"],
+    input[type="password"]{
+      width:100%;
+      padding:0.65rem 0.75rem;
+      font-size:0.95rem;
+      border:1px solid rgba(0,0,0,0.08);
+      border-radius:6px;
+      outline:none;
+      transition: box-shadow .12s, border-color .12s;
+      background: #fff;
+    }
+    input::placeholder{ color: #c6c6c6; }
+
+    input:focus{
+      border-color: rgba(11,116,209,0.6);
+      box-shadow: 0 4px 12px rgba(11,116,209,0.08);
+    }
+
+    .btn{
+      display:block;
+      width:100%;
+      padding:0.75rem;
+      border-radius:6px;
+      font-size:1rem;
+      font-weight:600;
+      border: none;
+      cursor:pointer;
+      margin-top:0.45rem;
+    }
+    .btn-login{
+      background: var(--green);
+      color: #fff;
+      box-shadow: 0 6px 12px rgba(46,174,74,0.16);
+    }
+    .btn-create{
+      background: var(--teal);
+      color: #fff;
+      margin-top:0.75rem;
+    }
+
+    .back{
+      display:inline-block;
+      margin-top:0.85rem;
+      padding:0.45rem 0.7rem;
+      background:#5f6568;
+      color:#fff;
+      border-radius:6px;
+      font-size:0.9rem;
+      text-decoration:none;
+    }
+
+    /* =========================
+       Footer
+       ========================= */
+    .site-footer{
+      background: var(--brown);
+      color: #ffd97a;
+      padding:0.6rem 1rem;
+      font-size:0.92rem;
+      text-align:center;
+    }
+
+    /* =========================
+       Wider screens adjustments
+       ========================= */
+    @media(min-width:880px){
+      .site-header{ padding:0.8rem 2rem; }
+      .page{ padding:3rem 2rem; }
+      .login-card{ padding:2rem; }
+      .brand{ font-size:1.1rem; }
+    }
+
+    /* Accessibility small tweak: reduce motion */
+    @media (prefers-reduced-motion: reduce){
+      *{ transition: none !important; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">🎓</span>
+      <span>University Admission Portal</span>
+    </div>
+
+    <nav class="nav" aria-label="main navigation">
+      <span>Home</span>
+      <span>MMSY</span>
+      <span>AKU Main Website</span>
+      <span>Contact Us</span>
+    </nav>
+  </header>
+
+  <!-- Page content (centered) -->
+  <main class="page">
+    <section class="login-card" aria-labelledby="login-heading">
+
+      <div class="login-title" id="login-heading">
+        <span class="icon">👤</span>
+        <span>User Login</span>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <label for="userid">User ID</label>
+          <input id="userid" type="text" placeholder="abdullah.ara1069@gmail.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="pwd">Password</label>
+          <input id="pwd" type="password" placeholder="Password" />
+        </div>
+
+        <button type="submit" class="btn btn-login">Login</button>
+
+        <button type="button" class="btn btn-create">I don't have an account</button>
+      </form>
+
+      <a class="back" href="#">&lt;&lt; Back</a>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    © 2024 <strong>University Admission Module</strong> | Maintained by AKU IT Cell &nbsp; <span style="color:#ffd; font-weight:700;">Admin Login</span>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>User:login</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family:sans-serif;
+        }
+
+        .body {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+
+
+        }
+
+        .header {
+            /* border: 2px solid salmon; */
+            height: 10vh;
+        }
+
+        .main {
+            /* border: 2px solid salmon; */
+            height: 80vh;
+        }
+
+        .footer {
+            /* border: 2px solid salmon; */
+            height: 10vh;
+        }
+
+        .navbar_parent {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(16, 116, 155);
+            
+        }
+
+        .nav_child2 {
+            display: flex;
+            gap: 10px;
+            padding: 20px;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        .nav_child1 {
+            color: white;
+            font-family: sans-serif;
+        }
+
+        .footer_parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: brown;
+        }
+        span{
+            margin:2px;
+            padding:5px;
+            font-family:sans-serif;
+        }
+
+        span:nth-child(1) {
+            color: white;
+            font-weight: bold;
+
+        }
+        span:nth-child(2){
+            color:yellow;
+            font-weight: bold;
+        }
+         span:nth-child(3){
+            color:white;
+            font-weight: bold;
+        }
+        span:nth-child(4){
+            color: yellow;
+            font-weight: bold;
+        }
+        span:nth-child(5){
+            color:yellow;
+            font-weight: bold;
+        }
+        .fa-solid.fa-regular{
+            margin: 5px;
+        }
+        .main_child{
+            border: 2px solid black;
+            height: 60vh;
+            width:50%;
+            margin-top: 20px;
+        }
+        .main_cotainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .user_login{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+            gap: 5px;
+            font-size: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid grey;
+        }
+        label,input{
+            display: block;
+            width: 95%;
+            height: 40px;
+            margin-left: 10px;
+            margin-top: 0px;
+             margin-bottom: 0px;
+             /* border: none; */
+             border-radius: 5px;
+        }
+        .user_id{
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .pass{
+             margin-top: 20px;
+             margin-bottom: 0px;
+            
+        }
+        .login_btn{
+            background-color: rgb(17, 201, 17);
+            display: block;
+            width: 95%;
+            height:40px;
+             color:white;
+             font-size: 15px;
+             font-weight: 10px;
+             margin-top: 10px;
+             cursor: pointer;
+             margin-left: 10px;
+             border: none;
+             border-radius: 5px;
+             
+        }
+        .account_btn{
+            background-color: rgb(17, 183, 201);
+            display: block;
+            width: 95%;
+            height:40px;
+            color:white;
+            font-size: 15px;
+            font-weight: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+             margin-left: 10px;
+             border: none;
+             border-radius: 5px;
+
+        }
+        .back_button{
+            height: 40px;
+            width:80px;
+            margin-left: 340px;
+            margin-top:2px;
+            background-color: rgba(0, 0, 0, 0.608);
+            color: white;
+            border: none;
+             border-radius: 5px;
+             cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header bb">
+        <div class="navbar_parent">
+            <div class="nav_child1"><i class="fa-solid fa-graduation-cap"> <span style="font-family:  New', monospace;"  >University Admission Portal</span></i></div>
+            <div class="nav_child2">
+                <i class="fa-solid fa-house"> <span style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">HOME</span></i>
+                <i class="fa-solid fa-medal"><span style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">M M S Y</span></i>
+                <i class="fa-solid fa-globe"> <SPAN style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">AKU  Main  Website</SPAN></i>
+                <i class="fa-regular fa-envelope">  <SPAN style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Contact Us</SPAN></i>
+
+            </div>
+        </div>
+    </div>
+    <div class="main bb">
+        <div class="main_cotainer">
+            <div class="main_child">
+                <div class="user_login">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <h3>User Login</h3>
+                </div>
+                <div class="id">
+                    <label for="user_login" class="user_id"><i class="fa-solid fa-user-tie"></i> User ID </label>
+                    <input type="email" id="user_login" placeholder="Enter user ID">
+                     
+                </div>
+                <div class="pass">
+                    
+                     <label for="pass" class="pass"><i class="fa-solid fa-lock"></i> Password </label>
+                    <input type="password" id="pass" placeholder="Password">
+                </div>
+                <button class="login_btn" type="submit">Login</button>
+                <button class="account_btn">I don't have an account</button>
+            </div>
+            
+        </div>
+       <button class="back_button">&lt;&lt; Back</button>
+
+    </div>
+    <div class="footer bb">
+        <div class="footer_parent">
+            <span>@ 2024</span>
+            <span>University Admission Module</span>
+            <span>| Maintained by</span>
+            <span>AKU IT Cell |</span>
+            <span><i class="fa-brands fa-get-pocket"></i> Admin Login</span>
+        </div>
+        .
+    </div>
+</body>
+
+</html>

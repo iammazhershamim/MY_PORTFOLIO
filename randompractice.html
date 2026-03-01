@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITLE</title>
+    <style>
+        *{
+            background-color:rgb(241, 239, 239);
+            color: rgb(74, 54, 54);
+            font-size: xx-large;
+        }
+        section {
+            height: 100vh;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            /* width: 100%; */
+
+
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin: 20px;
+
+
+        }
+
+        .child1 {
+            height: 90vh;
+
+            border: 2px solid rgb(34, 244, 72);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+             border-radius: 10px;
+             background-color: #ca7e21;
+
+        }
+
+        .child2 {
+            height: 90vh;
+
+            border: 2px solid black;
+           
+        }
+
+        .child3 {
+            height: 90vh;
+
+            border: 2px solid black;
+        }
+
+        .pic {
+            border: 5px solid red;
+            border-radius: 50%;
+
+            height: 200px;
+            width: 200px;
+        }
+
+        .pic img {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="parent">
+            <div class="child1">
+                <div class="pic"><img src="/images/profilephoto.jpg" alt=""></div>
+                <H1>MAZHER SHAMIM</H1>
+            </div>
+            <div class="child1">
+                <div class="pic"><img src="/images/profilephoto.jpg" alt=""></div>
+                <H1>MAZHER SHAMIM</H1>
+            </div>
+            <div class="child1">
+                <div class="pic"><img src="/images/profilephoto.jpg" alt=""></div>
+                <H1>MAZHER SHAMIM</H1>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

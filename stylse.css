@@ -1,0 +1,98 @@
+  * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', Times, serif;
+  }
+
+  .box {
+      background-color: blue;
+      color: wheat;
+  }
+
+  .heading {
+      color: red;
+      text-align: center;
+  }
+
+  .clickme {
+      background-color: rgb(22, 201, 22);
+      border: black 2px solid;
+      cursor: pointer;
+     
+  }
+
+  .h1headding {
+      text-transform: capitalize;
+      text-align: center;
+
+  }
+
+  .outer {
+      font-size: 25px;
+      text-align: center;
+
+  }
+
+  .inner {
+
+      font-size: 10px;
+      text-align: center;
+  }
+  
+  .divpapa{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .hightdivv{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border:2px solid black;
+    border-radius: 50%;
+  }
+  .navbarparent{
+    height: 30px;
+    width: 100vw;
+    border: 2px solid black;
+    display: flex;
+    justify-content:space-around ;
+    background-color: black;
+    
+    
+
+  }
+  
+  
+  .navbartext{
+    color: rgb(225, 139, 108);
+  }
+  .navbarserch{
+   
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+  .navbarlink{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .sumitmain{
+    background-color: aquamarine;
+    color: black;
+  }
+  .searchamazon{
+    margin-left: 10px;
+    margin-right: 0;
+    padding: 0;
+  }
+  .sumitmain{
+    margin-left: 20px;
+  }

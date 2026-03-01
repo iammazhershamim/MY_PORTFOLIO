@@ -1,0 +1,231 @@
+:root {
+    --background: #ffe380;
+    --text_color: #1e3b29;
+    --text_size: 18px;
+    --link_color: #4B7447;
+
+}
+body {
+    background-color: var(--text_color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+* {
+    /* height: 100vh; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+/* navbar main content */
+.main_navbar {
+    height: 15vh;
+    /* width: 100%; */
+    background-color: var(--background);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: var(--text_size);
+    color: var(--text_color);
+
+}
+
+/* navbar child  */
+.nav_child {
+    color: var(--background);
+    font-weight: bold;
+    font-size: var(--text_size);
+    /* padding: 10px 15px; */
+    /* border-radius: 5px; */
+}
+
+a {
+    color: var(--text_color);
+}
+
+.nav_child a:hover {
+    color: var(--background);
+    transition: 0.3s;
+    
+}
+
+/* navbar child hover effect */
+.nav_child:hover {
+    background-color: var(--link_color);
+    color: var(--background);
+    transition: 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: var(--background);
+     /* transition: 0.3s;
+    transform:rotate(  90deg);   */
+}
+
+/*navbar contact button*/
+.Contact_button {
+    background-color: var(--link_color);
+    color: var(--background);
+    padding: 10px 15px;
+    border-radius: 5px;
+
+}
+
+.Contact_button:hover {
+    background-color: var(--text_color);
+    color: var(--background);
+    transition: 0.3s;
+    padding: 15px 20px;
+}
+
+/* navbar end */
+/*Hero section container*/
+.hero_container {
+    margin-top: 20px;
+    height: 600px;
+    width: 100wh;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-between;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2,1fr); 
+    
+     border: 2px solid var(--text_color);
+    
+}
+
+
+/*hero section child*/
+.left-hero {
+  height: 100%;
+    width: 100%;
+    font-size: var(--text_size);
+    /* border: 2px solid var(--text_color);
+    background-color: var(--background); */
+    /* display: flex; */
+    position: relative;
+    
+    
+}
+
+
+.right-hero {
+    height: 100%;
+    width: 100%;
+    font-size: var(--text_size);
+    /* border: 2px solid var(--text_color); 
+    background-color: rgb(29, 222, 55);  */
+    
+
+}
+/*hero section child end*/
+/* back groun image of hero */
+.backgroun_image{
+    height: 100%;
+    width: 100%;
+}
+/* text heading hero */
+.text_heading_hero{
+    color: var(--text_color);
+   position: absolute;
+   top: 20%;
+   left: 20%;
+
+}
+/* hero hire button section */
+.Hire_button{
+
+     background-color: var(--text_color);
+    color: var(--background);
+    transition: 0.3s;
+    padding: 15px 20px;
+    border:2px solid var(--text_color);
+    border-radius: 5px;
+}
+.Hire_button:hover {
+    background-color: var(--link_color);
+    color: var(--background);
+    transition: 0.3s;
+    padding: 20px 25px;
+    background-color: var(--text_color);
+}
+/* hero hire button section end here */
+/* para of hero start */
+.para_of_hero{
+    color:var(--text_color);
+    font-size: var(--text_size);
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+/* para of hero end here */
+/* para of hero hire button  */
+.Hire_button{   
+    position: absolute;
+    top: 60%;
+    left: 20%;
+}
+/* About Hero section container About*/
+.hero_container_about{
+   margin-top: 20px;
+    height: 600px;
+    width: 100wh;
+    background-color: var(--background);
+    position: relative;
+    
+     
+    
+     /* border: 2px solid var(--text_color); */
+}
+/* hero_about_child1 section */
+
+
+/* headig_about_h1 */
+.headig_about_h1{
+    color: var(--text_color);
+    font-size: 44px;
+    font-weight:    bold;
+    
+    text-align: center;
+}
+/* para_about */
+.para_of_about{
+    color: var(--text_color);
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: lighter;
+}
+.headig_about_h3{
+    color: var(--text_color);
+    font-size: 44px;
+    font-weight:    bold;
+    margin-top: 20px;
+    text-align: center;
+}
+/* about_footer_para */
+.about_footer_para{
+    color: var(--text_color);
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+/* work history  */
+.history_parent{
+    margin-top: 20px;
+    height: 100px;
+    width: 100wh;
+    background-color: var(--background);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
